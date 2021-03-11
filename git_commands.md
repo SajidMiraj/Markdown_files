@@ -78,4 +78,26 @@ git checkout <branch-name> --> jump one from other branch.
 git merge <sub-branch-name> master --> add all code sub-branch to master.
 ```
 
-### **[For, More information Visit Here](https://education.github.com/git-cheat-sheet-education.pdf)**
+## 6. SSH key for GITHUB
+* **Open your gitbash terminal and run following codes:**
+```
+    ssh-keygen -t ed25519 -C "<your_email@example.com>"
+
+    eval `ssh-agent -s`
+
+    ssh-add ~/.ssh/id_ed25519
+
+    clip < ~/.ssh/id_ed25519.pub
+
+```
+* **Then, go to your account settings**
+* **Find "SSH and GPG keys" from Navbar**
+* **Open it and click "New SSH key" option**
+* **Define an "unique title" and click paste option in "Key field"**
+* **click "add SSH key" option YOU ARE GOOD TO GO !**
+* **[Visit here for more information](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)**
+
+
+## 7. 
+
+### **[GIT PDF](https://education.github.com/git-cheat-sheet-education.pdf)**
