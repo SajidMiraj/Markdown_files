@@ -1,0 +1,38 @@
+passwd = mysql2345
+#IQ: 
+. primary_id thakle data duplication hoy na
+
+
+
+1.USE (database_name) = database pointing korte
+
+2.SELECT *(all) FROM (table_name) = table er all data show korate
+
+3.WHERE (selected table er any column_name) = indivisually data show korate
+
+4.ORDER BY (any column_name) = choto theke boro crome table binnas hobe
+
+5.ALTER TABLE (table_name) DROP COLUMN (column_name) --> table er jekon column delete korte.
+
+6.ALTER TABLE (table_name) ADD COLUMN (new_column_name) DECIMAL(10, 1)/VARCHAR(25)/TEXT(20) --> new column add korte.
+
+7.INSERT INTO (table_name) (column_1, column_2, column...) VALUES
+(column_1_value_asign, column_2_value_asign, column..._value_asign); --> table e value insert korte.
+
+8.DELETE (table_name) WHERE (any_colmn_name) = (this indivisual column just one value pass) --> row delete korte
+
+9.SELECT @@autocommit --> auto-commit status check korte
+
+10.set autocommit = 0 --> auto-commit set korte 0 = off; 1 = on
+
+
+11.rollback --> auto-commit off thakle rollback korle sob data fire ase
+
+12.commit --> auto-commit off thakle commit korar upay
+
+13.DELETE FROM (table_name) WHERE (primary_key column_name) BETWEEN 1 AND 111; --> multiple data delete korte
+
+14. Normalization:
+	1.duplicate data store na kore protek data er jonne ekta 	kore table 	niye table ekat kore primary key set kora.
+	2.oi table-gula r primary key ke onno ekta table er forign key dhore kaaj 		korle database onek boro holeo easily handle kora jay.
+

@@ -1,0 +1,33 @@
+172.104.164.149	    
+
+ in VM 
+last --> all successful SSH login lastb --> failed login/ try to log in
+
+	#how to start package in linux
+1.systemctl start <pack_name> --> strat for provide servicing
+2.systemctl enable <pack_name> --> turn package workable or active stage from static
+3.systemctl disable <pack_name> --> inactive package
+4.systemctl status <pack_name> --> status check current package
+5.systemctl restart <pack_name> --> run this command when update any conf file and active stage this package with update
+
+systemctl list-unit-files |more--> check status of all active/disable packages
+
+   FIREWALL
+firewall-cmd --permanent --add-service= <pack_name> -->add firewall config
+firewall-cmd --reload --> reload firewall service 
+
+top --> for check machine health 
+
+vmstat 5 --> server health checking
+
+dnf info <pack-name> --> information for this pirticular package
+
+hostnamectl -->local host info. check
+
+dnf list --installed --> see all installed packages
+
+dnf list --installed | grep -i <pack_name> --> specifiq package khuje ber korte
+
+
+PS1="\[\e[33m\][\[\e[m\]\[\e[1;37;45m\]\u\[\e[m\]\[\e[34m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]:\[\e[36m\]\w\[\e[m\]\[\e[33m\]]\[\e[m\]\[\e[47;40m\]\\$\[\e[m\] "
+-->  CLI custom color-code
