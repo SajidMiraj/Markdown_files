@@ -98,6 +98,14 @@ git merge <sub-branch-name> master --> add all code sub-branch to master.
 * **[Visit here for more information](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)**
 
 
-## 7. 
+## 7. PUSH and PULL request in GIT
+* **Run this code for find your remote repo name :**
+```
+git remote
+```
+* **Run this code for find your push request url :**
+```
+git remote -v
+```
 
 ### **[GIT PDF](https://education.github.com/git-cheat-sheet-education.pdf)**
