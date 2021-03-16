@@ -109,4 +109,9 @@ git remote
 git remote -v
 ```
 
+* **Run this code for push files :**
+```
+git push -u <git-remote-name> master
+```
+
 ### **[GIT PDF](https://education.github.com/git-cheat-sheet-education.pdf)**
