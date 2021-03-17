@@ -1,0 +1,17 @@
+Similarities:
+--> kernal
+--> community supports
+
+
+Desktop
+--> slow instead of ubuntu-SERVER.
+--> process much for GUI.
+--> main focus for user comfortablity.
+--> default installation packages for user comfortablity.
+--> much programs for UI.
+
+
+Server
+--> processing faster then DESKTOP.
+--> work with just CLI (command line interface).
+--> default installation packages just for serverside requirements.
