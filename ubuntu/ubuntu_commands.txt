@@ -1,4 +1,25 @@
-sudo apt-get update --> linux repositroy update korar jonne
+APT = Advanced Packaging Tool
+cd /etc = all installed apps config files directory
+
+find <define-directory> -iname "file-name" --> searching for find-out file
+
+	#installing package
+apt update --> linux local repositroy update korar jonne
+apt upgrade --> installed package updatable korte
+apt list --installed --> for see all installed package
+apt list --upgradeable --> see all installed packages that need to be update
+	
+	#uninstalling package
+apt remove <package-name> --> only remove binary this specific package
+apt purge <package-name> --> totally remove this package with configaration files too
+
+
+	#set ALIAS
+1. nano ~/.bashrc
+2.file some alias from this file
+3.type alias <short-name> = 'any command'
+4.reboot system
+
 
 passwd --> currect user password change korte
 
@@ -18,7 +39,7 @@ sed '5d' (sumaya.txt) --> 5th line delete hobe sumaya.txt file theke
 
 sudo adduser (user_name) --> user add korte
 
-cat /etc/passwd |grep (user_name) --> user id varivication check korte
+cat /etc/passwd |grep (user_name) --> user id varification check korte
 
 groups (user_name) --> oi user er ki ki access right deya hoise ta show kore
 
