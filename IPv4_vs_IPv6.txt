@@ -1,0 +1,34 @@
+IP:
+--> nureric number
+--> it is the identy of any devices that connected with network(internet)
+--> every devices need unique ip for communication on network
+--> it consists 2 part: 
+	1.network-address 
+	2.host-address
+
+IPv4:
+--> use 32bit numeric number.
+    2^32 = 4billion unique number will produced for ipv4 address.
+--> it use decimal number with seperate (dot.)
+
+example: 192.168.0.103
+	 --- --- - ---
+	 octed.octed.octed.octed
+
+--> it produce generally 4 number address
+--> every number(---) called "OCTED"
+--> OCTED is a unit of digital information in computing and telecommunications that consists of "Eight Bit".
+    it means, every ipv4 (example: 192.168.0.103) number can't cross limit of [2^8]
+    it will limited with 0-255 decimal number    
+
+
+
+IPv6:
+--> it use 128bit numeric number.
+--> uses hexadecimal number with seperate colon.
+
+example: 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+
+--> every ipv6 number limitation of [2^128]
+    it will limited with [3.41^38] that is huge for near decands
+	

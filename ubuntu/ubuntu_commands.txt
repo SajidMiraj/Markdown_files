@@ -1,5 +1,7 @@
 APT = Advanced Packaging Tool
 cd /etc = all installed apps config files directory
+cat /var/log/dpkg.log = see all installation and removal of packages
+
 
 find <define-directory> -iname "file-name" --> searching for find-out file
 
