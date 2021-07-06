@@ -79,32 +79,40 @@ git merge <sub-branch-name> master --> add all code sub-branch to master.
 ```
 
 ## 6. SSH key for GITHUB
-* **Open your gitbash terminal and run following codes:**
-```
-    ssh-keygen -t ed25519 -C "<your_email@example.com>"
+* **Open your gitbash terminal and run following code one by one:**  
 
-    eval `ssh-agent -s`
+`
+ssh-keygen -t ed25519 -C "<your_email@example.com>"
+`
 
-    ssh-add ~/.ssh/id_ed25519
+`
+eval ssh-agent -s
+`
 
-    clip < ~/.ssh/id_ed25519.pub
+`
+ssh-add ~/.ssh/id_ed25519
+`
 
-```
-* **Then, go to your account settings**
-* **Find "SSH and GPG keys" from Navbar**
-* **Open it and click "New SSH key" option**
-* **Define an "unique title" and click paste option in "Key field"**
-* **click "add SSH key" option YOU ARE GOOD TO GO !**
-* **[Visit here for more information](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)**
+`
+cat ~/.ssh/id_ed25519.pub
+`
+
+- **Copy the SSH code**
+- **Then, go to your account settings**
+- **Find "SSH and GPG keys" from Navbar**
+- **Open it and click "New SSH key" option**
+- **Define an "unique title" and paste in "Key field"**
+- **click "add SSH key" option YOU ARE GOOD TO GO !**
+- **[Visit here for more information](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)**
 
 
 ## 7. PUSH and PULL request in GIT
-* **Run this code for find your remote repo name :**
+- **Run this code for find your remote repo name :**
 ```
 git remote
 ```
 
-* **Run this code for find your push request url :**
+- **Run this code for find your push request url :**
 ```
 git remote -v
 ```
