@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selector & Examples</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            margin: 0 50px;
+            padding: 0;
+        }
+
+        ul li{
+            margin-bottom: 20px;
+        }
+
+        .btn{
+            background: #f1f1f1;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background: red;
+        }
+
+        #visited:link{
+            color: red;
+        }
+
+        #visited:visited{
+            color: green;
+        }
+
+        .link-visited{
+            color: violet;
+        }
+
+        .btn-focus:focus{
+            background: darkblue;
+        }
+
+        #child-li p:first-child:hover{
+            color: red;
+        }
+
+        .before::before{
+            content: "---";
+        }
+
+        .after::after{
+            content: "@@@";
+        }
+
+        .selection::selection{
+            color: red;
+            background-color: green;
+        }
+        
+        .validity:invalid{
+            border: 5px dotted red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="margin-bottom: 20px;">Pseudo Classes in CSS</h1>
+    <ul>
+        <li>
+            <button class="btn">Hover Me</button> <br>
+            
+            <p>Here, applied <i>Hover</i> Pseudo class. when, mouse hover it, it change the state <i>button selector </i>
+            </p>
+        </li>
+        <li>
+            <a id="visited" href="https://google.com" target="_blank">Click Here</a> <br>
+
+            <p>Here, applied <i>link</i> & <i>visited</i> pseudo class. When user click the link, it color will be change</p>
+        </li>
+        <li>
+            <a href="#" class="link-active">Click Here</a> <br>
+
+            <p>Here, applied <i>active</i> pseudo class. When user click the link and hold on, it color will be change</p>
+        </li>
+        <li>
+            <button class="btn-focus">Focus Effect</button> <br>
+            
+            <p>Here, applied <i>focus</i> pseudo class. when, mouse click the button it, it change the state unless the user <i>click again out side</i> of this button <i>button selector </i>
+            </p>
+        </li>
+        <li id="child-li">
+            <p>First child</p>
+            <p>Second child</p>
+        </li>
+        <li>
+            <input type="radio" checked>
+            <p>first radio box checked permanently for checked pseudo class</p>
+            <input type="radio" > <br>
+            <input type="radio" >
+        </li>
+        <li>
+            <input type="radio" disabled>
+            <p>first radio box disable permanently for disabled pseudo class</p>
+            <input type="radio" > <br>
+            <input type="radio" >
+        </li>
+
+        <li>
+            <input type="email" class="validity"> <br>
+            if you don't give your email properly, this box will be red
+        </li>
+        <li>
+            <input type="text" placeholder="You just read the message" readonly> <br>
+            this box just for reading not any writing. it is because, we use readonly in input box
+        </li>
+        <li>
+            <input type="text" placeholder="this is optional input box." > <br>
+            <i>optional</i> pseudo class for you get access to ignore this input field.
+        </li>
+    </ul>
+
+    <h1>Pseudo Elements in CSS</h1>
+    <ul>
+        <li>
+            <p class="before">here, we use <ins>before pseudo element</ins></p>
+        </li>
+        <li>
+            <p class="after">here, we use <ins>after pseudo element</ins></p>
+        </li>
+        <li>
+            <b class="selection">::selection pseudo element use for selecting text for coping using mouse.</b>
+        </li>
+    </ul>
+</body>
+</html>
