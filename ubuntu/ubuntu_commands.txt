@@ -1,3 +1,7 @@
+sudo -s  for root user
+
+
+
 APT = Advanced Packaging Tool
 cd /etc = all installed apps config files directory
 cat /var/log/dpkg.log = see all installation and removal of packages
