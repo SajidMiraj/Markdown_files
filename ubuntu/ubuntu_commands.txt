@@ -1,8 +1,24 @@
 sudo -s  for root user
 
+	remote log in linux
+sudo apt update ---> update linux local repositroy
+sudo apt install onenssh-server --> download ssl service as onenssh-server
+systemctl status onenssh-server
+nano etc/ssh/sshd_config
+then,
+paste it carefully
+
+#CUSTOM CODES
+#logged directly root user
+PermitRootLogin yes
+#Login Banner
+Banner /etc/issue.net
+PrintMotd yes
 
 
-APT = Advanced Packaging Tool
+reboot system
+ssh root@<ip> 
+
 cd /etc = all installed apps config files directory
 cat /var/log/dpkg.log = see all installation and removal of packages
 
@@ -10,6 +26,7 @@ cat /var/log/dpkg.log = see all installation and removal of packages
 find <define-directory> -iname "file-name" --> searching for find-out file
 
 	#installing package
+	APT = Advanced Packaging Tool
 apt update --> linux local repositroy update korar jonne
 apt upgrade --> installed package updatable korte
 apt list --installed --> for see all installed package
