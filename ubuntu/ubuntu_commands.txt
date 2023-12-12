@@ -1,4 +1,12 @@
-sudo -s  for root user
+sudo -s  set as root user
+
+	#how to start package in linux
+1.systemctl start <pack_name> --> strat for provide servicing
+2.systemctl enable <pack_name> --> turn package workable or active stage from static
+3.systemctl disable <pack_name> --> inactive package
+4.systemctl status <pack_name> --> status check current package
+5.systemctl restart <pack_name> --> run this command when update any conf file and active stage this package with update
+6.systemctl list-unit-files |more --> check status of all active/disable packages
 
 	remote log in linux
 sudo apt update ---> update linux local repositroy
